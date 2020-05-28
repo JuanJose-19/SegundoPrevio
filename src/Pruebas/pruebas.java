@@ -15,7 +15,7 @@ public class pruebas {
 		Cliente cliente = new Cliente();
 		ClienteDAO cDAO = new ClienteDAO();
 		
-		cliente.setId(2);	
+		cliente.setId(3);	
 		cliente.setNombre("Juan Jose");
 		cliente.setEmail("juanjose@gmail.com");
 		cliente.setClave("1234");
@@ -37,7 +37,7 @@ public class pruebas {
 		Tienda tienda = new Tienda();
 		TiendaDAO tDAO = new TiendaDAO();
 		
-		tienda.setId(4);
+		tienda.setId(5);
 		tienda.setNombre("Justo Y Bueno");
 		tienda.setLema("Mas Barato Imposible");
 		tienda.setDescripcion("Lo Mejor");
@@ -53,7 +53,7 @@ public class pruebas {
 		Servicio servicio = new Servicio();
 		ServicioDAO sDAO = new ServicioDAO();
 		
-		servicio.setId(10);	
+		servicio.setId(6);	
 		servicio.setNombre("Juan Jose");
 		servicio.setDescripcion("La Mejor Tienda De Cucuta");
 		servicio.setTienda(1234);

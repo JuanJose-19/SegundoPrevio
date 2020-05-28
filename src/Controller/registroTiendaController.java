@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class registroController
+ * Servlet implementation class registroTiendaController
  */
-@WebServlet("/registroController")
-public class registroClienteController extends HttpServlet {
+@WebServlet("/registroTiendaController")
+public class registroTiendaController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public registroClienteController() {
+    public registroTiendaController() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -36,6 +36,16 @@ public class registroClienteController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+		
+		String nombre = request.getParameter("codigo");
+		String lema = request.getParameter("nombre");
+		String descripcion = request.getParameter("creditos");
+		String email = request.getParameter("semestre");
+		String pasword = request.getParameter("codigo");
+		String propietario = request.getParameter("nombre");
+		String facebook = request.getParameter("creditos");
+		String web = request.getParameter("semestre");
+		String imagen = request.getParameter("semestre");
 		
 		
 	}
