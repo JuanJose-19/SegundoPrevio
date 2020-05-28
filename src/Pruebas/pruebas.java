@@ -11,7 +11,7 @@ public class pruebas {
 		Cliente cliente = new Cliente();
 		ClienteDAO cDAO = new ClienteDAO();
 		
-		cliente.setId(100);	
+	//	cliente.setId(100);	
 		cliente.setNombre("Juan Jose");
 		cliente.setEmail("juanjose@gmail.com");
 		cliente.setClave("1234");
@@ -28,8 +28,8 @@ public class pruebas {
 			//c2 = cDAO.buscar(120);
 			//System.out.println(c2.getNombre());
 		//cDAO.eliminar(cliente);
-	}	
-
+	//}	
+}
 	}
 
-}
+
