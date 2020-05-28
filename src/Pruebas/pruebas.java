@@ -1,7 +1,11 @@
 package Pruebas;
 
 import DAO.ClienteDAO;
+import DAO.ServicioDAO;
+import DAO.TiendaDAO;
 import DTO.Cliente;
+import DTO.Servicio;
+import DTO.Tienda;
 
 public class pruebas {
 	
@@ -11,7 +15,7 @@ public class pruebas {
 		Cliente cliente = new Cliente();
 		ClienteDAO cDAO = new ClienteDAO();
 		
-	//	cliente.setId(100);	
+		cliente.setId(2);	
 		cliente.setNombre("Juan Jose");
 		cliente.setEmail("juanjose@gmail.com");
 		cliente.setClave("1234");
@@ -29,6 +33,37 @@ public class pruebas {
 			//System.out.println(c2.getNombre());
 		//cDAO.eliminar(cliente);
 	//}	
+		
+		Tienda tienda = new Tienda();
+		TiendaDAO tDAO = new TiendaDAO();
+		
+		tienda.setId(4);
+		tienda.setNombre("Justo Y Bueno");
+		tienda.setLema("Mas Barato Imposible");
+		tienda.setDescripcion("Lo Mejor");
+		tienda.setEmail("justoybueno@gmail.com");
+		tienda.setClave("1234");
+		tienda.setPropietario("JuanJose");
+		tienda.setFacebook("facebook");
+		tienda.setWeb("Web");
+		tienda.setImagen("La Imagen");
+		
+		tDAO.insertar(tienda);
+		
+		Servicio servicio = new Servicio();
+		ServicioDAO sDAO = new ServicioDAO();
+		
+		servicio.setId(10);	
+		servicio.setNombre("Juan Jose");
+		servicio.setDescripcion("La Mejor Tienda De Cucuta");
+		servicio.setTienda(1234);
+		
+		sDAO.insertar(servicio);
+		
+		
+		
+		
+		
 }
 	}
 
