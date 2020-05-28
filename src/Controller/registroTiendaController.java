@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import DTO.Tienda;
+
 /**
  * Servlet implementation class registroTiendaController
  */
@@ -37,15 +39,27 @@ public class registroTiendaController extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 		
-		String nombre = request.getParameter("codigo");
-		String lema = request.getParameter("nombre");
-		String descripcion = request.getParameter("creditos");
-		String email = request.getParameter("semestre");
-		String pasword = request.getParameter("codigo");
-		String propietario = request.getParameter("nombre");
-		String facebook = request.getParameter("creditos");
-		String web = request.getParameter("semestre");
-		String imagen = request.getParameter("semestre");
+		String nombre = request.getParameter("nombre");
+		String lema = request.getParameter("lema");
+		String descripcion = request.getParameter("descripcion");
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
+		String propietario = request.getParameter("propietario");
+		String facebook = request.getParameter("facebook");
+		String web = request.getParameter("web");
+		String imagen = request.getParameter("imagen");
+		
+		Tienda tienda = new Tienda();
+		
+		tienda.setNombre(nombre);
+		tienda.setLema(lema);
+		tienda.setDescripcion(descripcion);
+		tienda.setEmail(email);
+		tienda.setClave(password);
+		tienda.setPropietario(propietario);
+		tienda.setFacebook(facebook);
+		tienda.setWeb(web);
+		tienda.setImagen(imagen);
 		
 		
 	}
